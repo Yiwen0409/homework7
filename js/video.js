@@ -8,7 +8,7 @@ window.addEventListener("load", function() {
 window.onload=function(){
 	var video=document.querySelector("#player1");
 	var currentspeed=1;
-	var mutestatues=false;
+	var mutestatus=false;
 	var currentvolumn=100;
 	var playVid=document.getElementById("play");
 	var pauseVid=document.getElementById("pause");
