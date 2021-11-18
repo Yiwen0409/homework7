@@ -14,7 +14,7 @@ window.onload=function(){
 	var pauseVid=document.getElementById("pause");
 	var slowVid=document.getElementById("slower");
 	var speedVid=document.getElementById("faster");
-    var skipAhead=document.getElementById("skip");
+        var skipAhead=document.getElementById("skip");
 	var muting=document.getElementById("mute");
 	var sliding=document.getElementById("slider");
 	var oldschool=document.getElementById("vintage");
@@ -23,7 +23,7 @@ window.onload=function(){
 	playVid.addEventListener("click", function(){
 		video.play();
 		console.log("Play Video");
-		document.querySelector("#volumn").innerHTML=currentvolumn+"%";
+		document.querySelector("#volumn").innerHTML=currentvolume + "%";
 	});
 
 	pauseVid.addEventListener("click",function(){
@@ -60,15 +60,15 @@ window.onload=function(){
 
 	muting.addEventListener("click",function(){
 		if(mutestatus == true){
-			video.muted = false;
 			mutestatus = false;
-			mutebtn.innerHTML = "Mute";
+			video.muted = false;
+			muting.innerHTML = "Mute";
 			// console.log("Unmuted");
 		}
 		else{
-			video.muted = true;
 			mutestatus = true;
-			mutebtn.innerHTML = "Unmute";
+			video.muted = true;
+			muting.innerHTML = "Unmute";
 			// console.log("Muted");
 		}
 	});
